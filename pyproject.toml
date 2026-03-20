@@ -1,0 +1,20 @@
+[project]
+name = "agent-monitor"
+version = "0.1.0"
+description = "AI-powered misalignment detection for coding agent sessions"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+agent-monitor = "agent_monitor.cli:main"
+
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
